@@ -1,0 +1,229 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 87.5vh;
+  width: 90%;
+  padding: 10px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  min-height: 425px;
+  height: 100%;
+  background-color: #121212;
+}
+
+
+
+  .text-principal {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    flex-direction: column;
+    font-family: var(--font-dm-sans);
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.text-principal .txt-lower {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.sections-main::-webkit-scrollbar {
+  height: 0;  /* Torna a barra de rolagem horizontal invisível no Chrome/Safari */
+}
+
+.sections-main {
+  overflow-x: scroll; /* Adicione overflow-x: scroll para permitir a rolagem horizontal */
+}
+
+
+.itens-list {
+  height: 65vh;
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-gap: 10px; /* Espaçamento entre os cards, ajuste conforme necessário */
+  justify-content: left; /* Centraliza os cards horizontalmente */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  left: 0;
+}
+
+.card {
+  width: 230px;
+  height: 230px;
+  background: linear-gradient(to bottom right, #3f6b38, #1a7557);
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Adiciona posicionamento relativo para posicionamento absoluto dentro do card */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  left: 0;
+  padding: 10px;
+  overflow: hidden; /* Corta qualquer conteúdo que ultrapasse as bordas do card */
+  border-radius: 8px;
+}
+
+.card:hover {
+  background: linear-gradient(to bottom right, #508847, #208f6a);
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+  max-width: 100%; /* Ajusta a imagem proporcionalmente ao tamanho do card */
+  transform: rotate(20deg); /* Gira a imagem em 30 graus */
+  position: absolute; /* Adiciona posicionamento absoluto para posicionamento personalizado */
+  bottom: 0;
+  right: -50;
+  margin-left: 165px;
+}
+
+.card span {
+  position: absolute; /* Adiciona posicionamento absoluto para posicionamento no canto superior esquerdo */
+  top: 0;
+  left: 0;
+  margin: 10px; /* Adiciona margem para dar espaço ao texto */
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #121212;
+}
+
+.header-navigation .navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Ajustado o margin-left para 10px */
+    background-color: rgb(41, 41, 41);
+    border-radius: 18px;
+    padding: 12px;
+}
+
+.header-search:hover {
+  background-color: rgb(58, 58, 58);
+}
+
+
+.header-search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header-search input {
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    padding: 0 100px 0 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Moverá para a direita todo o conteúdo à esquerda dele */
+  margin-right: 10px; /* Adicionado um espaço à direita de 10px */
+}
+
+.header-login .subscribe {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 22px;
+    width: 120px;
+}
+
+.header-login .subscribe:hover {
+  color: #868686;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 22px;
+  width: 120px;
+}
+
+.header-login .subscribe:active {
+  color: #636363;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  margin-right: 22px;
+  width: 120px;
+}
+
+.header-login .login {
+    width: 100px;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 35px;
+}
+
+.header-login .login:hover {
+  width: 100px;
+  height: 40px;
+  color: #000;
+  background-color: #868686;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 35px;
+}
+
+.header-login .login:active {
+  width: 100px;
+  height: 40px;
+  background-color: #636363;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 35px;
+}
